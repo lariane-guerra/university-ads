@@ -1,2 +1,2 @@
-# university-ads
-Repositório criado para armazenamento das atividades realizadas durante o tecnólogo de ADS.
+# Lariane Spalenza Guerra
+Desenvolvedora Front-End Trainee
