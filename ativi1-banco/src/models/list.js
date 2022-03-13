@@ -3,7 +3,7 @@ var fs = require('fs');
 function list() {}
 
 list.prototype.getList = function(callback) {
-  fs.readFile('./data/dados_login.json', 'utf8', function(err, result) {
+  fs.readFile('./data/banks.json', 'utf8', function(err, result) {
     var data = [];
 
     if (!err) {
@@ -11,9 +11,9 @@ list.prototype.getList = function(callback) {
       var obj = JSON.parse(result);
       var i = 0; //(obj.pessoas.length - 1);
 
-      obj.pessoas.forEach(function(pessoas) {
+      obj.bancos.forEach(function(bancos) {
         if (i >=  0) {
-          data[i] = pessoas;
+          data[i] = bancos;
 	      i++;
         }
       });
